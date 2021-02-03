@@ -1,1 +1,0 @@
-holbertonschool zero day projects
