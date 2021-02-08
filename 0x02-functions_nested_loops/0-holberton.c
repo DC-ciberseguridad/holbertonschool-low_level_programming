@@ -1,14 +1,19 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
-* main - print the string in the put function
-*
-* Description: using the main function
-* this program prints "Programming is like building a multilingual puzzle
-* Return: 0
-*/
+ * main - function to print
+ *
+ * Return: 0
+ */
 int main(void)
 {
-	printf("Holberton\n");
-	return (0);
+	char holberton[9] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
+	unsigned int c;
+
+	for (c = 0; c < sizeof(holberton); c++)
+	{
+		_putchar(holberton[c]);
+	}
+_putchar('\n');
+return (0);
 }
