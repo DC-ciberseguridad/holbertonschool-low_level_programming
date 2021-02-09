@@ -1,7 +1,7 @@
 # include "holberton.h"
 /**
-*_isalpha - function to check if c is a letter, lowercase or uppercase
-* @c: is the int that will use for the argument of the function
+* print_sign - function to check for a sign of a number
+* @n: is the int that will use for the argument of the function
 * Return: 0
 */
 
