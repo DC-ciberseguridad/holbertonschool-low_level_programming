@@ -6,17 +6,17 @@
  * Return: 0
  */
 
-int print_last_digit(int n)
+int print_last_digit(int c)
 {
-	if (n > 0 || n == 0)
+	if (c > 0 || c == 0)
 	{
-	_putchar(n % 10 + '0');
-	return (n % 10);
+	_putchar(c % 10 + '0');
+	return (c % 10);
 	}
 	else
 	{
-	n = n * -1;
-	_putchar(n % 10 + '0');
-	return (n % 10);
+	c = c * -1;
+	_putchar(c % 10 + '0');
+	return (c % 10);
 	}
 }
