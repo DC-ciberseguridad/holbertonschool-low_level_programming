@@ -5,31 +5,22 @@
  *@s: pointer the string we want to change
  *Return: no return
  */
+
 void rev_string(char *s)
 {
-	int i;
-	int j;
-	char gua[1000];
+	int i, c, j;
+	char ch;
 
-	i = 0;
-	while (*(s + i) != '\0')
+	for (i = 0; s[i] != '\0'; i++)
+	{}
+
+	j = i - 1;
+
+	for (c = 0; c < (i / 2); c++)
 	{
-		i++;
-	}
-
-	j = 0;
-	while (*(s + j) != '\0')
-	{
-
-		gua[j] = *(s + j);
-		j++;
-	}
-
-	j = 0;
-	while (i >= 0)
-	{
-		s[j] = gua[i - 1];
-		i--;
-		j++;
+		ch = s[j];
+		s[j] = s[c];
+		s[c] = ch;
+		j--;
 	}
 }
